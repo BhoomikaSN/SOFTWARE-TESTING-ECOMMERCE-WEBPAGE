@@ -1,0 +1,258 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, a, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding-top: 60px; /* Make space for the fixed header */
+    background-image: url('../images/image-2.jpg'); /* Default background image for all pages */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.home-page {
+    background-image: url('../images/image-1.jpg'); /* Background image for home page */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 60px - 40px); /* Ensure footer stays at bottom */
+}
+
+.hero {
+    text-align: center;
+    margin: 20px 0;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+    color: #fff; /* Ensure text is readable on the background image */
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #555;
+}
+
+.navigation-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navigation-icons .icon {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.navigation-icons .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3, .product p {
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.auth {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.auth label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.auth input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth button:hover {
+    background-color: #555;
+}
+
+.auth p {
+    text-align: center;
+}
+
+.auth p a {
+    color: #333;
+    text-decoration: none;
+}
+
+.auth p a:hover {
+    text-decoration: underline;
+}
+
+.product-detail {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-detail p {
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items li img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+#cart-items li span {
+    flex: 1;
+}
+
+#checkout {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#checkout:hover {
+    background-color: #555;
+}
